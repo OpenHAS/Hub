@@ -1,0 +1,95 @@
+{
+    "Controllers": [
+        {
+            "Configuration": [
+                {
+                    "Key": "ClientName",
+                    "Value": "HomeAutomation.Communication.Mqtt"
+                },
+                {
+                    "Key": "KeepAliveCheckPeriodInSeconds",
+                    "Value": "20"
+                },
+                {
+                    "Key": "ServerHostName",
+                    "Value": "ephubudx0001.epam.nimbus-online.net"
+                },
+                {
+                    "Key": "TopicRootName",
+                    "Value": "/HomeAutomation"
+                },
+				{
+					"Key": "Username",
+					"Value": "$"
+				},
+				{
+					"Key": "Password",
+					"Value": "$"
+				}
+            ],
+            "Factory": "HomeAutomation.Controller.Mqtt.MqttControllerFactory, HomeAutomation.Controller.Mqtt",
+            "Name": "Mqtt"
+        }
+    ],
+    "DeviceNetworks": [
+        {
+            "Configuration": [
+                {
+                    "Key": "BaudRate",
+                    "Value": "9600"
+                },
+                {
+                    "Key": "DataBits",
+                    "Value": "8"
+                },
+                {
+                    "Key": "SerialParity",
+                    "Value": "0"
+                },
+                {
+                    "Key": "SerialStopBitCount",
+                    "Value": "0"
+                },
+				{
+					"Key": "APIVersion",
+					"Value": "2"
+				}
+            ],
+            "Factory": "HomeAutomation.DeviceNetwork.XBee.XBeeDeviceNetworkFactory, HomeAutomation.DeviceNetwork.XBee",
+            "Name": "xbee"
+        }
+    ],
+    "DeviceTypes": [
+        {
+            "DeviceClassTypeString": "MosziNet.Devices.XBee.TemperatureDeviceV1, MosziNet.Devices.XBee",
+            "DeviceNetworkName": "xbee",
+            "DeviceTypeId": 39304
+        },
+        {
+            "DeviceClassTypeString": "MosziNet.Devices.XBee.TemperatureDeviceV2, MosziNet.Devices.XBee",
+            "DeviceNetworkName": "xbee",
+            "DeviceTypeId": 39302
+        },
+        {
+            "DeviceClassTypeString": "MosziNet.Devices.XBee.MosziServerRoomDevice, MosziNet.Devices.XBee",
+            "DeviceNetworkName": "xbee",
+            "DeviceTypeId": 39301
+        },
+        {
+            "DeviceClassTypeString": "MosziNet.Devices.XBee.DoubleRelay, MosziNet.Devices.XBee",
+            "DeviceNetworkName": "xbee",
+            "DeviceTypeId": 39300
+        },
+        {
+            "DeviceClassTypeString": "MosziNet.Devices.XBee.EpamTemperatureDeviceV1, MosziNet.Devices.XBee",
+            "DeviceNetworkName": "xbee",
+            "DeviceTypeId": 59905
+        },
+        {
+            "DeviceClassTypeString": "MosziNet.Devices.XBee.EpamTemperatureDeviceV2, MosziNet.Devices.XBee",
+            "DeviceNetworkName": "xbee",
+            "DeviceTypeId": 59906
+        }
+    ]
+}
+

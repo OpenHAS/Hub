@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HomeAutomation.Core.ComponentState">
+    <Position X="5.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ComponentState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeAutomation.Core.DeviceCommand">
+    <Position X="9" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAQAAAAAAAAAAIAAEAAAAAA=</HashCode>
+      <FileName>DeviceCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeAutomation.Core.DeviceState">
+    <Position X="1.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DeviceState.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Device" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ComponentStateList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Interface Name="HomeAutomation.Core.IDevice">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAgEAAAAAA=</HashCode>
+      <FileName>IDevice.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HomeAutomation.Core.IDeviceNetwork">
+    <Position X="3" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAEAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>IDeviceNetwork.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
